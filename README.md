@@ -1,93 +1,77 @@
-# Summer of LabVIEW - Reversi
+Gameplay
+
+Reversi, also commonly known by its trademark name Othello, is a strategic board game for two players. The game is played on an 8x8 grid board, and each player has discs that are black on one side and white on the other. Players take turns placing their colored discs on the board with their assigned color facing up.
+
+Objective:
+The objective of the game is to have the majority of discs turned to display your color when the last playable empty square is filled.
+
+Setup:
+The game starts with two black discs and two white discs at the center of the board in a diagonal pattern. Black typically moves first but in this version your color won't change for the duration of a match but the player to start is decided on a 50-50 random number generator.
+
+How to Play:
+
+Making a Move: On your turn, place one of your discs on an empty square so that one or more of your opponent's discs are flanked by discs of your color on opposite ends. A valid move must capture at least one of the opponent's discs, which means it must outflank one or more discs in any direction: horizontally, vertically, or diagonally.
+
+Capturing Discs: After placing your disc, all of the opponent's discs that you have flanked become yours and are flipped to your color. The game proceeds with players alternating turns.
+
+Skipping Turns: If a player has no valid moves, their turn is skipped, and the other player continues.
+
+End of the Game: The game ends when neither player can make a move, usually when all 64 squares are filled. The player with the most discs of their color facing up on the board wins.
+
+Reversi requires strategic thinking, as players must consider not only where they place their discs, but also anticipate and counter their opponent's moves. The dynamic of the board can change dramatically with each turn, making it a challenging and engaging game.
+
+
+Creating an AI Player
+
+You have the choice whether you want to create a submission using Object-Oriented Programming (OOP) or not. Use the appropriate instructions for your choice or choices. Feel free to make one or more of either or both of the options. There may be trade-offs for either approach.
+
+Not Using OOP
+
+Use the NonOOPlayer.vit (VI Template file) to create your own VI. Write all your code in that VI. This VI defines the code that will be executed every time for your turn. The inputs and outputs will be described in more detail below.
+
+Save your VI in the Folder you saved this project in on disk in the Players\Non OO Players subfolder. Also, add your VI to the Submit Non OO Entry virtual folder in the project. The name your choose to save the VI as will become the player name. This will be used for win/lose stats and, if playing "One Game-Choose Players", this is the name used to select your player type. 
+
+
+Using OOP
+
+Create a child class of the Player.lvclass included with this project. Save your class in on disk in the folder you saved this project in the Players\OO Players\[Your class subfolder]. There are two required overrides:
+
+1. "Name.vi" defines the unique name used for your player. This will be used for win/lose stats and, if playing "One Game-Choose Players", this is the name used to select your player type.
+2. "Execute Turn.vi" defines the method that will be executed every time for your turn. The inputs and outputs will be described in more detail below.
+
+
+Inputs
+
+The Inputs to either your VI or the "Execute Turn.vi" method are as follows:
+
+Your Class in - (Using OOP only) your class object is maintained from turn to turn during the game. Any state you wish to maintain will persist. However, a new object is started each game so nothing persists between games.
+
+Board - 2D Numeric Array representing the current state of the board. It is an 8x8 grid. The values will be {0 = Free Space, 1 = Black Owned, 2 = White Owned}
+
+Possible Moves - 2D Boolean Array representing places you are allowed to choose ({TRUE = Allowed Place, FALSE = Spot Not Allowed)} be careful to pick a spot that you are allowed to choose. If you pick one you are not allowed to choose, no spot will be taken and you will loose the turn.
+
+Player Color - Enum {Black, White} tells you what color you are. This will not change to the duration of one game but could be different at the start of the next game.
+
+Error in - should always be "no error"
 
 
 
-## Getting started
+Outputs
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+Your Class out - (Using OOP only) your class object out. Again, the state you put in you'll receive on your next turn.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+Choice Coordinates - Cluster of two elements, Row and Column. Use the "Possible Moves" input and your logic you provide to give an appropriate set of coordinates.
 
-## Add your files
+Error out - pass any errors out if you need but not required.
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
 
-```
-cd existing_repo
-git remote add origin https://gitlab.com/QSI_Shared_Code/summer-of-labview-reversi.git
-git branch -M main
-git push -uf origin main
-```
 
-## Integrate with your tools
+Matches
 
-- [ ] [Set up project integrations](https://gitlab.com/QSI_Shared_Code/summer-of-labview-reversi/-/settings/integrations)
+Each Player will play a set of games against every other player. Your color won't change for the duration of a match but the player to start is decided on a 50-50 random number generator.
 
-## Collaborate with your team
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
 
-## Test and Deploy
+Submission
 
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
-
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
-
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
-
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
-
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
-
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
-
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
-
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
-
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
-
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
-
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
-
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
-
-## License
-For open source projects, say how it is licensed.
-
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Use the zip file build spec in the Build Specifications. It will wrap both OO and Non OO submissions. Then go to www.summeroflabview.com and submit the zip file.
