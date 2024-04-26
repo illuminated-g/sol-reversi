@@ -4,5 +4,8 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">536903680</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Item Name="Diagon Alley.lvclass" Type="LVClass" URL="../../Players/Diagon Alley/Diagon Alley.lvclass"/>
+	<Item Name="Human.lvclass" Type="LVClass" URL="../Human/Human.lvclass"/>
+	<Item Name="Player.lvclass" Type="LVClass" URL="../Player/Player.lvclass"/>
 	<Item Name="Reversi.lvclass" Type="LVClass" URL="../Reversi.lvclass"/>
 </Library>

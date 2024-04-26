@@ -12,26 +12,25 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="Submit OOP Entry" Type="Folder"/>
-		<Item Name="Submit Non OOP Entry" Type="Folder">
-			<Item Name="TestPlayer.vi" Type="VI" URL="../Players/Non OO Players/TestPlayer.vi">
-				<Property Name="marked" Type="Int">0</Property>
+		<Item Name="Game Engine - Do not edit" Type="Folder">
+			<Item Name="Non OOP Example" Type="Folder">
+				<Item Name="Diagon Alley.vi" Type="VI" URL="../Players/Non OO Players/Diagon Alley.vi">
+					<Property Name="marked" Type="Int">0</Property>
+				</Item>
+			</Item>
+			<Item Name="Reversi" Type="Folder">
+				<Item Name="Reversi.lvlib" Type="Library" URL="../Reversi/Reversi.lvlib"/>
+				<Item Name="NonOOPlayer.lvclass" Type="LVClass" URL="../Players/NonOOPlayer/Engine/NonOOPlayer.lvclass"/>
+			</Item>
+			<Item Name="Graphics" Type="Folder">
+				<Item Name="Black.png" Type="Document" URL="../Graphics/Black.png"/>
+				<Item Name="Blank.png" Type="Document" URL="../Graphics/Blank.png"/>
+				<Item Name="Reversi.png" Type="Document" URL="../Graphics/Reversi.png"/>
+				<Item Name="White.png" Type="Document" URL="../Graphics/White.png"/>
 			</Item>
 		</Item>
-		<Item Name="Player Classes" Type="Folder">
-			<Item Name="Human.lvclass" Type="LVClass" URL="../Reversi/Human/Human.lvclass"/>
-			<Item Name="Player.lvclass" Type="LVClass" URL="../Reversi/Player/Player.lvclass"/>
-			<Item Name="NonOOPlayer.lvclass" Type="LVClass" URL="../Reversi/NonOOPlayer/NonOOPlayer.lvclass"/>
-		</Item>
-		<Item Name="Non OOP Example" Type="Folder">
-			<Item Name="Diagon Alley.vi" Type="VI" URL="../Players/Non OO Players/Diagon Alley.vi">
-				<Property Name="marked" Type="Int">0</Property>
-			</Item>
-		</Item>
-		<Item Name="Reversi.lvlib" Type="Library" URL="../Reversi/Reversi.lvlib"/>
-		<Item Name="NonOOPlayer.vit" Type="VI" URL="../Reversi/NonOOPlayer/NonOOPlayer.vit">
-			<Property Name="marked" Type="Int">0</Property>
-		</Item>
+		<Item Name="ReversiPlayer.lvclass" Type="LVClass" URL="../Players/ReversiPlayer/ReversiPlayer.lvclass"/>
+		<Item Name="NonOOPlayer.lvlib" Type="Library" URL="../Players/NonOOPlayer/NonOOPlayer.lvlib"/>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="Launch Game.vi" Type="VI" URL="../Launch Game.vi">
 			<Property Name="marked" Type="Int">0</Property>
@@ -100,9 +99,6 @@
 				<Item Name="Random Number (Range).vi" Type="VI" URL="/&lt;vilib&gt;/numeric/Random Number (Range).vi">
 					<Property Name="marked" Type="Int">0</Property>
 				</Item>
-				<Item Name="Get File Extension.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Get File Extension.vi">
-					<Property Name="marked" Type="Int">0</Property>
-				</Item>
 				<Item Name="List Directory and LLBs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/List Directory and LLBs.vi">
 					<Property Name="marked" Type="Int">0</Property>
 				</Item>
@@ -129,8 +125,8 @@
 				<Property Name="DestinationItemCount" Type="Int">1</Property>
 				<Property Name="DestinationName[0]" Type="Str">Destination Directory</Property>
 				<Property Name="IncludedItemCount" Type="Int">2</Property>
-				<Property Name="IncludedItems[0]" Type="Ref">/My Computer/Submit OOP Entry</Property>
-				<Property Name="IncludedItems[1]" Type="Ref">/My Computer/Submit Non OOP Entry</Property>
+				<Property Name="IncludedItems[0]" Type="Ref"></Property>
+				<Property Name="IncludedItems[1]" Type="Ref"></Property>
 				<Property Name="IncludeProject" Type="Bool">false</Property>
 				<Property Name="Path[0]" Type="Path">../ReversiSubmission.zip</Property>
 				<Property Name="ZipBase" Type="Str">NI_zipbasedefault</Property>
