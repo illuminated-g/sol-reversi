@@ -29,8 +29,9 @@
 				<Item Name="White.png" Type="Document" URL="../Graphics/White.png"/>
 			</Item>
 		</Item>
-		<Item Name="ReversiPlayer.lvclass" Type="LVClass" URL="../Players/ReversiPlayer/ReversiPlayer.lvclass"/>
-		<Item Name="NonOOPlayer.lvlib" Type="Library" URL="../Players/NonOOPlayer/NonOOPlayer.lvlib"/>
+		<Item Name="Submission" Type="Folder">
+			<Item Name="NonOOPlayer.lvlib" Type="Library" URL="../Players/NonOOPlayer/NonOOPlayer.lvlib"/>
+		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="Launch Game.vi" Type="VI" URL="../Launch Game.vi">
 			<Property Name="marked" Type="Int">0</Property>
@@ -124,12 +125,12 @@
 				<Property Name="DestinationID[0]" Type="Str">{33AF868C-A990-480B-8BE5-8A63CB253515}</Property>
 				<Property Name="DestinationItemCount" Type="Int">1</Property>
 				<Property Name="DestinationName[0]" Type="Str">Destination Directory</Property>
-				<Property Name="IncludedItemCount" Type="Int">2</Property>
-				<Property Name="IncludedItems[0]" Type="Ref"></Property>
+				<Property Name="IncludedItemCount" Type="Int">1</Property>
+				<Property Name="IncludedItems[0]" Type="Ref">/My Computer/Submission</Property>
 				<Property Name="IncludedItems[1]" Type="Ref"></Property>
 				<Property Name="IncludeProject" Type="Bool">false</Property>
 				<Property Name="Path[0]" Type="Path">../ReversiSubmission.zip</Property>
-				<Property Name="ZipBase" Type="Str">NI_zipbasedefault</Property>
+				<Property Name="ZipBase" Type="Str">NI_zipbasevirtual</Property>
 			</Item>
 		</Item>
 	</Item>

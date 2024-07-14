@@ -24,7 +24,7 @@ Reversi requires strategic thinking, as players must consider not only where the
 
 ## Creating an AI Player
 
-You have the choice whether you want to create a submission using Object-Oriented Programming (OOP) or not. You will be given the choice of the type of implementation when creating a new project from the Summer of LabVIEW - Reversi project template available when clicking the Create Project button in LabVIEW's Getting Started Window. In either case all of the necessary files will be available for you in the project that gets created.
+You have the choice whether you want to create a submission using Object-Oriented Programming (OOP) or not. You can choose the appropriate project template when creating a new project in LabVIEW. In either case all of the necessary files will be available for you in the project that gets created. All files for your submission must reside in the "Submission" folder; anything not in the submission folder will not get included in the Zip file that gets created to upload to the Summer of LabVIEW website. Anything in the Game Engine folder must not be changed outside of official updates from the Summer of LabVIEW organizers to ensure all submissions are compatible with the game engine that will be used for the tournament ranking.
 
 ### OOP (Class) Based Player
 
@@ -32,7 +32,7 @@ Expand the "ReversiPlayer.lvclass" to see the two dynamic dispatch VIs that are 
 
 ### Non-OOP Player
 
-Open "Player Name.vi" and change the string constant on the block diagram to set the name that will be displayed for the AI player.
+Expand the "NonOOPlayer.lvlib" and then open "Player Name.vi" and change the string constant on the block diagram to set the name that will be displayed for the AI player.
 
 All of your AI player's logic will go into the "ReversiPlayer.vi". The VI has comments on the block diagram to remind you of the inputs that are available and what needs to be provided in the output.
 
