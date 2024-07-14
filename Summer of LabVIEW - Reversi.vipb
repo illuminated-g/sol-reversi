@@ -1,10 +1,10 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-04-24 22:23:28" Modified_Date="2024-07-13 21:49:49" Creator="qalld" Comments="" ID="730bde6a05f193481e799e7af02dd437">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-04-24 22:23:28" Modified_Date="2024-07-14 12:41:06" Creator="qalld" Comments="" ID="fb886d3727ca5a4428efc523498a7608">
   <Library_General_Settings>
     <Package_File_Name>summer_of_labview_reversi</Package_File_Name>
-    <Library_Version>1.0.0.9</Library_Version>
+    <Library_Version>1.0.0.13</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
-    <Library_Output_Folder>..</Library_Output_Folder>
+    <Library_Output_Folder>..\vip</Library_Output_Folder>
     <Company_Name>Summer of LabVIEW</Company_Name>
     <Library_Summary/>
     <Library_License>Unlicense</Library_License>
@@ -28,7 +28,7 @@
     <VI_Package_Configuration_File>Summer of LabVIEW - Reversi.vipc</VI_Package_Configuration_File>
     <Description>
       <One_Line_Description_Summary>Reversi game for the Summer of LabVIEW</One_Line_Description_Summary>
-      <Description>This installs a Project Template to get you started.
+      <Description>This installs two Project Templates to get started with Reversi easily. There is a NonOOP template and an OOP template.
 
 Reversi, also commonly known by its trademark name Othello, is a strategic board game for two players. The game is played on an 8x8 grid board, and each player has discs that are black on one side and white on the other. Players take turns placing their colored discs on the board with their assigned color facing up. The objective of the game is to have the majority of discs turned to display your color when the last playable empty square is filled.
 
@@ -37,7 +37,7 @@ In this version you can play as a human or create your own AI player.
 You have the choice whether you want to create a submission using Object-Oriented Programming (OOP) or not. Use the appropriate instructions for your choice or choices. Feel free to make one or more of either or both of the options. There may be trade-offs for either approach. The instructions are available in the included README.md</Description>
       <Copyright/>
       <Packager>Q Alldredge</Packager>
-      <URL>www.summeroflabview.com</URL>
+      <URL>https://summeroflabview.com</URL>
       <Release_Notes/>
     </Description>
     <Destinations>
@@ -107,6 +107,12 @@ You have the choice whether you want to create a submission using Object-Oriente
       </Additional_Destination>
     </Destinations>
     <Source_Files>
+      <Destination_Overrides>
+        <Path>.</Path>
+        <Destination>0</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
       <Destination_Overrides>
         <Path>ProjectTemplates/CategoryOverrides</Path>
         <Destination>9</Destination>

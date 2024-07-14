@@ -119,18 +119,17 @@
 			<Item Name="NonOOPlayer.lvlib" Type="Library" URL="../Players/NonOOPlayer/NonOOPlayer.lvlib"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Reversi Submission" Type="Zip File">
+			<Item Name="Submission Zip" Type="Zip File">
 				<Property Name="Absolute[0]" Type="Bool">false</Property>
-				<Property Name="BuildName" Type="Str">Reversi Submission</Property>
+				<Property Name="BuildName" Type="Str">Submission Zip</Property>
 				<Property Name="Comments" Type="Str"></Property>
-				<Property Name="DestinationID[0]" Type="Str">{33AF868C-A990-480B-8BE5-8A63CB253515}</Property>
+				<Property Name="DestinationID[0]" Type="Str">{A9CE0565-BE5F-4664-91A3-ED0DFFAA9F6E}</Property>
 				<Property Name="DestinationItemCount" Type="Int">1</Property>
 				<Property Name="DestinationName[0]" Type="Str">Destination Directory</Property>
 				<Property Name="IncludedItemCount" Type="Int">1</Property>
 				<Property Name="IncludedItems[0]" Type="Ref">/My Computer/Submission</Property>
-				<Property Name="IncludedItems[1]" Type="Ref"></Property>
 				<Property Name="IncludeProject" Type="Bool">false</Property>
-				<Property Name="Path[0]" Type="Path">../ReversiSubmission.zip</Property>
+				<Property Name="Path[0]" Type="Path">../../builds/Reversi OOP/Submission Zip/Reversi OOP.zip</Property>
 				<Property Name="ZipBase" Type="Str">NI_zipbasevirtual</Property>
 			</Item>
 		</Item>

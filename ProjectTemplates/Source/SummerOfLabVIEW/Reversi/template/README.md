@@ -30,11 +30,15 @@ You have the choice whether you want to create a submission using Object-Oriente
 
 Expand the "ReversiPlayer.lvclass" to see the two dynamic dispatch VIs that are already created for you. First, open "Name.vi" and replace the string constant contents with the name you want displayed for your submission. This can be a unique team name or your own name or some combination. Once you have the name updated you can implement your AI player's logic in the "Execute Turn.vi" file, following the guidance of the comments on the block diagram.
 
+All SubVIs created should be created as a part of the class regardless of whether they are purely functional SubVIs or are class members with class inputs/outputs. This ensures it's easier to rename things in the future to prevent name conflicts when facing other submissions.
+
 ### Non-OOP Player
 
 Expand the "NonOOPlayer.lvlib" and then open "Player Name.vi" and change the string constant on the block diagram to set the name that will be displayed for the AI player.
 
 All of your AI player's logic will go into the "ReversiPlayer.vi". The VI has comments on the block diagram to remind you of the inputs that are available and what needs to be provided in the output.
+
+When organizing functionality into SubVIs, ensure you've added the VIs to the library file so it's easier to prevent VI name conflicts when the tournament is run.
 
 ### Inputs
 
