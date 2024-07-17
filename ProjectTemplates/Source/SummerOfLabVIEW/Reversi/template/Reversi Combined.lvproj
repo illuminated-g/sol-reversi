@@ -20,6 +20,7 @@
 			</Item>
 			<Item Name="Reversi" Type="Folder">
 				<Item Name="Reversi.lvlib" Type="Library" URL="../Reversi/Reversi.lvlib"/>
+				<Item Name="NonOOPlayer.lvclass" Type="LVClass" URL="../Players/NonOOPlayer/Engine/NonOOPlayer.lvclass"/>
 			</Item>
 			<Item Name="Graphics" Type="Folder">
 				<Item Name="Black.png" Type="Document" URL="../Graphics/Black.png"/>
@@ -29,6 +30,7 @@
 			</Item>
 		</Item>
 		<Item Name="Submission" Type="Folder">
+			<Item Name="NonOOPlayer.lvlib" Type="Library" URL="../Players/NonOOPlayer/NonOOPlayer.lvlib"/>
 			<Item Name="ReversiPlayer.lvclass" Type="LVClass" URL="../Players/ReversiPlayer/ReversiPlayer.lvclass"/>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
@@ -121,13 +123,13 @@
 				<Property Name="Absolute[0]" Type="Bool">false</Property>
 				<Property Name="BuildName" Type="Str">Submission Zip</Property>
 				<Property Name="Comments" Type="Str"></Property>
-				<Property Name="DestinationID[0]" Type="Str">{A9CE0565-BE5F-4664-91A3-ED0DFFAA9F6E}</Property>
+				<Property Name="DestinationID[0]" Type="Str">{B3AC0C13-09BE-4567-AF34-06B54E354CD7}</Property>
 				<Property Name="DestinationItemCount" Type="Int">1</Property>
 				<Property Name="DestinationName[0]" Type="Str">Destination Directory</Property>
 				<Property Name="IncludedItemCount" Type="Int">1</Property>
 				<Property Name="IncludedItems[0]" Type="Ref">/My Computer/Submission</Property>
 				<Property Name="IncludeProject" Type="Bool">false</Property>
-				<Property Name="Path[0]" Type="Path">../../builds/Reversi OOP/Submission Zip/Reversi OOP.zip</Property>
+				<Property Name="Path[0]" Type="Path">../../builds/Reversi NonOOP/My Zip File/Reversi NonOOP.zip</Property>
 				<Property Name="ZipBase" Type="Str">NI_zipbasevirtual</Property>
 			</Item>
 		</Item>
