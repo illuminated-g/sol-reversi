@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-04-24 22:23:28" Modified_Date="2024-07-14 12:41:06" Creator="qalld" Comments="" ID="fb886d3727ca5a4428efc523498a7608">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-04-24 22:23:28" Modified_Date="2024-07-16 22:11:04" Creator="qalld" Comments="" ID="d78170d7913d0c980bda6fdd95c8496d">
   <Library_General_Settings>
     <Package_File_Name>summer_of_labview_reversi</Package_File_Name>
-    <Library_Version>1.0.0.13</Library_Version>
+    <Library_Version>1.1.0.15</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\vip</Library_Output_Folder>
@@ -137,6 +137,18 @@ You have the choice whether you want to create a submission using Object-Oriente
         <Additional_Destination>false</Additional_Destination>
         <Additional_Destination_Index>0</Additional_Destination_Index>
       </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>Tools</Path>
+        <Destination>7</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
+      <Destination_Overrides>
+        <Path>Tools/Summer of LabVIEW</Path>
+        <Destination>7</Destination>
+        <Additional_Destination>false</Additional_Destination>
+        <Additional_Destination_Index>0</Additional_Destination_Index>
+      </Destination_Overrides>
       <Password_Overrides>
         <Path>.</Path>
         <Password/>
@@ -147,8 +159,14 @@ You have the choice whether you want to create a submission using Object-Oriente
         <Namespace_Type>Prefix</Namespace_Type>
         <Namespace/>
       </Namespace_Overrides>
+      <Exclusions>
+        <Path>build</Path>
+      </Exclusions>
       <Place_Folder_Contents>
         <Path/>
+      </Place_Folder_Contents>
+      <Place_Folder_Contents>
+        <Path>Tools</Path>
       </Place_Folder_Contents>
     </Source_Files>
     <License_Agreement_Filepath/>

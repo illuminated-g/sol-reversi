@@ -1,6 +1,7 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
+	<Property Name="sol.reversi.version" Type="Str">1.1.0.14</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -33,7 +34,7 @@
 			<Item Name="NonOOPlayer.lvlib" Type="Library" URL="../Players/NonOOPlayer/NonOOPlayer.lvlib"/>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
-		<Item Name="Launch Game.vi" Type="VI" URL="../Launch Game.vi">
+		<Item Name="Launch Game.vi" Type="VI" URL="../Reversi/Launch Game.vi">
 			<Property Name="marked" Type="Int">0</Property>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">

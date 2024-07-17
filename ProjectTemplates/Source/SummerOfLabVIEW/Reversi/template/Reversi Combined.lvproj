@@ -34,7 +34,7 @@
 			<Item Name="ReversiPlayer.lvclass" Type="LVClass" URL="../Players/ReversiPlayer/ReversiPlayer.lvclass"/>
 		</Item>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
-		<Item Name="Launch Game.vi" Type="VI" URL="../Launch Game.vi">
+		<Item Name="Launch Game.vi" Type="VI" URL="../Reversi/Launch Game.vi">
 			<Property Name="marked" Type="Int">0</Property>
 		</Item>
 		<Item Name="Dependencies" Type="Dependencies">
