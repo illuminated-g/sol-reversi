@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-04-24 22:23:28" Modified_Date="2024-07-16 22:11:04" Creator="qalld" Comments="" ID="d78170d7913d0c980bda6fdd95c8496d">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2024-04-24 22:23:28" Modified_Date="2024-07-16 23:29:18" Creator="qalld" Comments="" ID="ec1890ea8109819b0678731a1d5da5db">
   <Library_General_Settings>
     <Package_File_Name>summer_of_labview_reversi</Package_File_Name>
-    <Library_Version>1.1.0.15</Library_Version>
+    <Library_Version>1.1.0.18</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>.</Library_Source_Folder>
     <Library_Output_Folder>..\vip</Library_Output_Folder>
@@ -30,6 +30,8 @@
       <One_Line_Description_Summary>Reversi game for the Summer of LabVIEW</One_Line_Description_Summary>
       <Description>This installs two Project Templates to get started with Reversi easily. There is a NonOOP template and an OOP template.
 
+Also included is a Project Updater available in Tools -&gt; Summer of LabVIEW menu for updating projects that have already been started with fixes and new players available with new package versions.
+
 Reversi, also commonly known by its trademark name Othello, is a strategic board game for two players. The game is played on an 8x8 grid board, and each player has discs that are black on one side and white on the other. Players take turns placing their colored discs on the board with their assigned color facing up. The objective of the game is to have the majority of discs turned to display your color when the last playable empty square is filled.
 
 In this version you can play as a human or create your own AI player.
@@ -38,7 +40,11 @@ You have the choice whether you want to create a submission using Object-Oriente
       <Copyright/>
       <Packager>Q Alldredge</Packager>
       <URL>https://summeroflabview.com</URL>
-      <Release_Notes/>
+      <Release_Notes>1.1.0.17
+- Add project update tooling for existing projects. Access via Tools -&gt; Summer of LabVIEW -&gt; Update Reversi Project...
+- Fixes handling of incorrect move choices and ends game
+- Fixes UI interactions when playing as a "Human" player interactively
+- Updates board graphics with option to show possible moves</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
