@@ -29,10 +29,8 @@
 				<Item Name="White.png" Type="Document" URL="../Graphics/White.png"/>
 			</Item>
 		</Item>
-		<Item Name="Submission" Type="Folder">
-			<Item Name="NonOOPlayer.lvlib" Type="Library" URL="../Players/NonOOPlayer/NonOOPlayer.lvlib"/>
-			<Item Name="ReversiPlayer.lvclass" Type="LVClass" URL="../Players/ReversiPlayer/ReversiPlayer.lvclass"/>
-		</Item>
+		<Item Name="NonOOPlayer.lvlib" Type="Library" URL="../Players/NonOOPlayer/NonOOPlayer.lvlib"/>
+		<Item Name="ReversiPlayer.lvclass" Type="LVClass" URL="../Players/ReversiPlayer/ReversiPlayer.lvclass"/>
 		<Item Name="README.md" Type="Document" URL="../README.md"/>
 		<Item Name="Launch Game.vi" Type="VI" URL="../Reversi/Launch Game.vi">
 			<Property Name="marked" Type="Int">0</Property>
@@ -116,22 +114,14 @@
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi">
 					<Property Name="marked" Type="Int">0</Property>
 				</Item>
+				<Item Name="TRef Find Object By Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Find Object By Label.vi"/>
+				<Item Name="TRef TravTarget.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef TravTarget.ctl"/>
+				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
+				<Item Name="Get GObject Label.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/Get GObject Label.vi"/>
+				<Item Name="Get LV Class Name.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/LVClass/Get LV Class Name.vi"/>
+				<Item Name="TRef Traverse.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/traverseref.llb/TRef Traverse.vi"/>
 			</Item>
 		</Item>
-		<Item Name="Build Specifications" Type="Build">
-			<Item Name="Submission Zip" Type="Zip File">
-				<Property Name="Absolute[0]" Type="Bool">false</Property>
-				<Property Name="BuildName" Type="Str">Submission Zip</Property>
-				<Property Name="Comments" Type="Str"></Property>
-				<Property Name="DestinationID[0]" Type="Str">{B3AC0C13-09BE-4567-AF34-06B54E354CD7}</Property>
-				<Property Name="DestinationItemCount" Type="Int">1</Property>
-				<Property Name="DestinationName[0]" Type="Str">Destination Directory</Property>
-				<Property Name="IncludedItemCount" Type="Int">1</Property>
-				<Property Name="IncludedItems[0]" Type="Ref">/My Computer/Submission</Property>
-				<Property Name="IncludeProject" Type="Bool">false</Property>
-				<Property Name="Path[0]" Type="Path">../../builds/Reversi NonOOP/My Zip File/Reversi NonOOP.zip</Property>
-				<Property Name="ZipBase" Type="Str">NI_zipbasevirtual</Property>
-			</Item>
-		</Item>
+		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 </Project>
