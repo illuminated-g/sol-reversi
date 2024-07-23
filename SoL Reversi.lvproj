@@ -10,12 +10,12 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="build" Type="Folder">
+		<Item Name="pkg-build" Type="Folder">
 			<Property Name="NI.SortType" Type="Int">3</Property>
 			<Item Name="Support" Type="Folder">
-				<Item Name="Next VIP Version.vi" Type="VI" URL="../build/Next VIP Version.vi"/>
+				<Item Name="Next VIP Version.vi" Type="VI" URL="../pkg-build/Next VIP Version.vi"/>
 			</Item>
-			<Item Name="VIP Prebuild.vi" Type="VI" URL="../build/VIP Prebuild.vi"/>
+			<Item Name="VIP Prebuild.vi" Type="VI" URL="../pkg-build/VIP Prebuild.vi"/>
 		</Item>
 		<Item Name="Project Templates" Type="Folder">
 			<Item Name="Reversi Combined.lvproj" Type="Document" URL="../ProjectTemplates/Source/SummerOfLabVIEW/Reversi/template/Reversi Combined.lvproj"/>
